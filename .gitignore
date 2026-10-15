@@ -1,0 +1,7 @@
+# Artefak pipeline dan data (tidak dibutuhkan Railway; tetap ikut ZIP submission)
+aazm_hafidz-pipeline/
+data/
+raw/
+
+__pycache__/
+.ipynb_checkpoints/

@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "obesity-model"
+    metrics_path: /monitoring/prometheus/metrics
+    scheme: https
+    static_configs:
+      # TODO: ganti dengan domain layanan TF Serving Anda di Railway
+      # (tanpa "https://" dan tanpa path), contoh: obesity-model.up.railway.app
+      - targets: ["GANTI-DENGAN-DOMAIN-SERVING.up.railway.app"]

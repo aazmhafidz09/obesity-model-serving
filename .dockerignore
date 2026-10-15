@@ -1,0 +1,8 @@
+aazm_hafidz-pipeline/
+data/
+raw/
+modules/
+*.ipynb
+*.png
+__pycache__/
+.git/

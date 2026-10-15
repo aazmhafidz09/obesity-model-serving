@@ -1,0 +1,6 @@
+tfx==1.21.0
+tensorflow==2.21.0
+tensorflow-model-analysis==0.52.0
+keras-tuner==1.4.8
+pylint
+requests
