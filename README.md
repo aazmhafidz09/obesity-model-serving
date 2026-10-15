@@ -14,7 +14,7 @@ Username dicoding: aazm_hafidz
 | Metrik evaluasi | `SparseCategoricalAccuracy` (threshold ≥ 0,75) dan `ExampleCount`, dihitung oleh TFMA pada komponen Evaluator. |
 | Performa model | _TODO: isi setelah pipeline dijalankan: hyperparameter terbaik, akurasi latih, akurasi evaluasi, status blessed._ |
 | Opsi deployment | _TODO: contoh: model disajikan dengan TensorFlow Serving di dalam container Docker dan di-deploy ke Railway (pengganti Heroku, yang tidak lagi gratis). Alasan: mendukung Dockerfile, mudah diatur lewat GitHub, tersedia domain HTTPS publik._ |
-| Web app | _TODO: [obesity-model](https://GANTI-DENGAN-DOMAIN-SERVING.up.railway.app/v1/models/obesity-model/metadata)_ |
+| Web app | [obesity-model](https://obesity-model-serving-production.up.railway.app/v1/models/obesity-model/metadata) |
 | Monitoring | _TODO: ringkas hasil Prometheus: jumlah request, latensi, status 200 vs error, dan apa yang terlihat setelah request uji dikirim._ |
 
 ## Struktur Proyek

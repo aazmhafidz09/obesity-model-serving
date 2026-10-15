@@ -7,6 +7,5 @@ scrape_configs:
     metrics_path: /monitoring/prometheus/metrics
     scheme: https
     static_configs:
-      # TODO: ganti dengan domain layanan TF Serving Anda di Railway
-      # (tanpa "https://" dan tanpa path), contoh: obesity-model.up.railway.app
-      - targets: ["GANTI-DENGAN-DOMAIN-SERVING.up.railway.app"]
+      # Domain layanan TF Serving di Railway (tanpa "https://" dan tanpa path)
+      - targets: ["obesity-model-serving-production.up.railway.app"]
