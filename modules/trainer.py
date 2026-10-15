@@ -1,7 +1,7 @@
 """Modul Trainer: melatih model dengan hyperparameter terbaik dari Tuner."""
 
+import keras
 import keras_tuner
-import tensorflow as tf
 import tensorflow_transform as tft
 
 from model import build_model, input_fn, save_model
@@ -26,8 +26,8 @@ def run_fn(fn_args):
     model = build_model(hparams)
 
     callbacks = [
-        tf.keras.callbacks.TensorBoard(log_dir=fn_args.model_run_dir),
-        tf.keras.callbacks.EarlyStopping(
+        keras.callbacks.TensorBoard(log_dir=fn_args.model_run_dir),
+        keras.callbacks.EarlyStopping(
             monitor=MONITOR, mode="max", patience=PATIENCE,
             restore_best_weights=True,
         ),

@@ -1,7 +1,7 @@
 """Modul Tuner: pencarian hyperparameter otomatis dengan KerasTuner."""
 
+import keras
 import keras_tuner
-import tensorflow as tf
 import tensorflow_transform as tft
 from tfx.components.tuner.component import TunerFnResult
 
@@ -32,7 +32,7 @@ def tuner_fn(fn_args):
         project_name="obesity_tuning",
     )
 
-    early_stopping = tf.keras.callbacks.EarlyStopping(
+    early_stopping = keras.callbacks.EarlyStopping(
         monitor=OBJECTIVE, mode="max", patience=3
     )
 

@@ -19,6 +19,11 @@ os.environ["PYTHONPATH"] = MODULES_DIR + os.pathsep + os.environ.get(
     "PYTHONPATH", ""
 )
 
+# Modul memakai paket `keras` (Keras 3) langsung agar sama dengan yang dipakai
+# KerasTuner. Variabel ini (sering terbawa dari notebook lama) memaksa tf.keras
+# menjadi Keras 2 sehingga tipe model tidak cocok, jadi dihapus.
+os.environ.pop("TF_USE_LEGACY_KERAS", None)
+
 # pylint: disable=wrong-import-position
 from apache_beam.options.pipeline_options import StandardOptions
 from tfx.orchestration import metadata, pipeline
